@@ -459,7 +459,7 @@ void sendMessage(const char* message) {
   while (sim800.available()) {
     String response = sim800.readString();
     Serial.println("Response: " + response);
-  }
+  } 
 
   // Send the Ctrl+Z character to indicate the end of the message
   sim800.print((char)26); // ASCII code of CTRL+Z
